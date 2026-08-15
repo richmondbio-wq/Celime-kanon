@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="fr" data-page="contact">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Passez commande auprès de Célime KANON — création de contenu IA, sites web et design. Contact direct WhatsApp.">
+  <title>Passer commande — Célime KANON</title>
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="bg-mesh"></div>
+  <div class="bg-grid"></div>
+  <canvas id="particles"></canvas>
+
+  <!-- ============ NAVIGATION ============ -->
+  <nav class="nav" id="navbar">
+    <div class="container nav-inner">
+      <a href="index.html" class="logo">
+        <span class="logo-badge">CK</span>
+        <span><span data-ck="site.name">Célime KANON</span><small data-ck="site.tagline">Portfolio officiel</small></span>
+      </a>
+      <div class="nav-links" id="navLinks">
+        <a href="index.html">Accueil</a>
+        <a href="portfolio.html">Compétences</a>
+        <a href="about.html">À propos</a>
+        <a href="contact.html" class="active nav-cta">Passer commande</a>
+      </div>
+      <button class="nav-burger" id="navBurger" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+
+  <!-- ============ PAGE HERO ============ -->
+  <header class="page-hero">
+    <div class="container">
+      <span class="eyebrow animate-in"><span class="dot"></span>Passer commande</span>
+      <h1 class="animate-in d1">Commençons votre <span class="gradient-text">projet</span></h1>
+      <p class="animate-in d2">Remplissez le formulaire ci-dessous, votre commande sera envoyée directement sur mon WhatsApp. Réponse rapide garantie.</p>
+    </div>
+  </header>
+
+  <!-- ============ CONTACT / COMMANDE ============ -->
+  <section style="padding-top: 20px;">
+    <div class="container">
+      <div class="contact-grid">
+        <!-- Infos -->
+        <div class="reveal">
+          <div class="info-card">
+            <div class="ic">@</div>
+            <div>
+              <b>Email</b>
+              <span data-ck="site.contact.email">richmondbio88@gmail.com</span>
+            </div>
+          </div>
+          <div class="info-card">
+            <div class="ic">W</div>
+            <div>
+              <b>WhatsApp</b>
+              <span data-ck="site.contact.whatsappDisplay">+229 01 92 46 32 85</span>
+            </div>
+          </div>
+          <div class="info-card">
+            <div class="ic">!</div>
+            <div>
+              <b>Disponibilité</b>
+              <span>Lun - Sam : 8h à 20h</span>
+            </div>
+          </div>
+          <div class="info-card">
+            <div class="ic">%</div>
+            <div>
+              <b>Réponse</b>
+              <span>Généralement en moins de 24h</span>
+            </div>
+          </div>
+          <div class="cta-banner" style="margin-top: 26px; padding: 34px 26px; text-align: left;">
+            <h2 style="font-size: 1.4rem;">Une question ?</h2>
+            <p style="font-size: 0.9rem; margin-bottom: 18px;">Discutons directement de votre projet sur WhatsApp.</p>
+            <a class="btn btn-sm js-wa-link" target="_blank" rel="noopener" style="background: #fff; color: var(--primary);">Écrire sur WhatsApp</a>
+          </div>
+        </div>
+
+        <!-- Formulaire -->
+        <div class="form-card reveal d2">
+          <h2>Formulaire de commande</h2>
+          <p>Tous les champs marqués d'un <span>*</span> sont obligatoires.</p>
+
+          <form id="orderForm" novalidate>
+            <div class="form-row">
+              <div class="field">
+                <label for="nom">Nom <span>*</span></label>
+                <input type="text" id="nom" placeholder="Votre nom" required>
+              </div>
+              <div class="field">
+                <label for="prenom">Prénom <span>*</span></label>
+                <input type="text" id="prenom" placeholder="Votre prénom" required>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="field">
+                <label for="tel">Numéro WhatsApp <span>*</span></label>
+                <input type="tel" id="tel" placeholder="+229 01 00 00 00 00" required>
+              </div>
+              <div class="field">
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="vous@email.com">
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="field">
+                <label for="service">Service souhaité <span>*</span></label>
+                <select id="service" required>
+                  <option value="">Choisissez un service...</option>
+                </select>
+              </div>
+              <div class="field">
+                <label for="budget">Budget</label>
+                <select id="budget">
+                  <option value="">Indiquez un budget...</option>
+                  <option>Moins de 50 000 FCFA</option>
+                  <option>50 000 - 100 000 FCFA</option>
+                  <option>100 000 - 300 000 FCFA</option>
+                  <option>Plus de 300 000 FCFA</option>
+                  <option>À discuter</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="field">
+              <label for="msg">Décrivez votre projet <span>*</span></label>
+              <textarea id="msg" placeholder="Parlez-moi de votre idée, vos objectifs, vos délais..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-block">
+              Envoyer ma commande via WhatsApp
+            </button>
+            <p style="text-align: center; color: var(--text-muted); font-size: 0.8rem; margin-top: 14px;" id="formHint">
+              Votre commande s'ouvrira dans WhatsApp, prête à être envoyée.
+            </p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a href="index.html" class="logo">
+            <span class="logo-badge">CK</span>
+            <span><span data-ck="site.name">Célime KANON</span><small data-ck="site.tagline">Portfolio officiel</small></span>
+          </a>
+          <p style="color: var(--text-muted); font-size: 0.9rem; margin-top: 16px; max-width: 320px;">Créateur de contenu IA & web entrepreneur. Je transforme vos idées en expériences digitales spectaculaires.</p>
+        </div>
+        <div>
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="portfolio.html">Compétences</a></li>
+            <li><a href="about.html">À propos</a></li>
+            <li><a href="contact.html">Passer commande</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <ul class="js-footer-contact">
+            <li><a data-ck="site.contact.email">richmondbio88@gmail.com</a></li>
+            <li><a class="js-wa-link" target="_blank" rel="noopener">WhatsApp</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span id="year"></span> <span data-ck="site.name">Célime KANON</span> — Tous droits réservés.</span>
+        <span>Créé avec passion ✦ Contenu IA & Web Design</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

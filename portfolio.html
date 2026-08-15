@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="fr" data-page="portfolio">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Compétences et réalisations de Célime KANON — créateur de contenu IA et web entrepreneur.">
+  <title>Compétences & Réalisations — Célime KANON</title>
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="bg-mesh"></div>
+  <div class="bg-grid"></div>
+  <canvas id="particles"></canvas>
+
+  <!-- ============ NAVIGATION ============ -->
+  <nav class="nav" id="navbar">
+    <div class="container nav-inner">
+      <a href="index.html" class="logo">
+        <span class="logo-badge">CK</span>
+        <span><span data-ck="site.name">Célime KANON</span><small data-ck="site.tagline">Portfolio officiel</small></span>
+      </a>
+      <div class="nav-links" id="navLinks">
+        <a href="index.html">Accueil</a>
+        <a href="portfolio.html" class="active">Compétences</a>
+        <a href="about.html">À propos</a>
+        <a href="contact.html" class="nav-cta">Passer commande</a>
+      </div>
+      <button class="nav-burger" id="navBurger" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+
+  <!-- ============ PAGE HERO ============ -->
+  <header class="page-hero">
+    <div class="container">
+      <span class="eyebrow animate-in"><span class="dot"></span>Portfolio & Compétences</span>
+      <h1 class="animate-in d1">Mes <span class="gradient-text">réalisations</span></h1>
+      <p class="animate-in d2">Découvrez mes projets, mes compétences techniques et le travail que je livre avec passion. Cliquez sur un projet pour en savoir plus.</p>
+    </div>
+  </header>
+
+  <!-- ============ PORTEFEUILLE ============ -->
+  <section id="portfolio" style="padding-top: 20px;">
+    <div class="container">
+      <div class="filter-bar reveal js-filters">
+        <button class="filter-btn active" data-filter="*">Tous</button>
+      </div>
+      <div class="portfolio-grid js-portfolio"></div>
+    </div>
+  </section>
+
+  <!-- ============ COMPÉTENCES ============ -->
+  <section id="skills">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="section-tag">Compétences</span>
+        <h2>Mon expertise</h2>
+        <p>Les domaines dans lesquels j'excelle pour vous offrir des résultats concrets.</p>
+      </div>
+      <div class="skills-wrap">
+        <div class="reveal js-skills"></div>
+        <div class="reveal d2">
+          <div class="form-card" style="box-shadow:none;">
+            <h2>Mon approche</h2>
+            <p>Chaque projet est traité avec rigueur et créativité :</p>
+            <ul class="offer-feats" style="margin-top: 8px;">
+              <li><span><b>Écoute :</b> comprendre vos besoins réels.</span></li>
+              <li><span><b>Créativité :</b> des solutions qui sortent du lot.</span></li>
+              <li><span><b>Technologie :</b> les meilleurs outils d'IA et du web.</span></li>
+              <li><span><b>Rapidité :</b> livraison dans les délais convenus.</span></li>
+            </ul>
+            <a href="contact.html" class="btn btn-primary btn-block" style="margin-top: 10px;">Travailler avec moi</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CTA ============ -->
+  <section>
+    <div class="container">
+      <div class="cta-banner reveal">
+        <h2>Vous voulez le même résultat ?</h2>
+        <p>Confiez-moi votre projet et je le transforme en succès digital.</p>
+        <a href="contact.html" class="btn btn-lg">Lancer mon projet</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a href="index.html" class="logo">
+            <span class="logo-badge">CK</span>
+            <span><span data-ck="site.name">Célime KANON</span><small data-ck="site.tagline">Portfolio officiel</small></span>
+          </a>
+          <p style="color: var(--text-muted); font-size: 0.9rem; margin-top: 16px; max-width: 320px;">Créateur de contenu IA & web entrepreneur. Je transforme vos idées en expériences digitales spectaculaires.</p>
+        </div>
+        <div>
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="portfolio.html">Compétences</a></li>
+            <li><a href="about.html">À propos</a></li>
+            <li><a href="contact.html">Passer commande</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <ul class="js-footer-contact">
+            <li><a data-ck="site.contact.email">richmondbio88@gmail.com</a></li>
+            <li><a class="js-wa-link" target="_blank" rel="noopener">WhatsApp</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span id="year"></span> <span data-ck="site.name">Célime KANON</span> — Tous droits réservés.</span>
+        <span>Créé avec passion ✦ Contenu IA & Web Design</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

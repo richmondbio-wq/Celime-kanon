@@ -1,0 +1,185 @@
+{
+  "admin": { "password": "ck2024" },
+  "site": {
+    "name": "Célime KANON",
+    "tagline": "Portfolio officiel",
+    "mode": "dark",
+    "theme": {
+      "primary": "#8b5cf6",
+      "secondary": "#06b6d4",
+      "accent": "#f59e0b",
+      "bg": "#07071a",
+      "bg2": "#0d0d28",
+      "text": "#f1f5f9",
+      "muted": "#a6adc2",
+      "font": "Poppins"
+    },
+    "contact": {
+      "email": "richmondbio88@gmail.com",
+      "whatsapp": "+2290192463285",
+      "whatsappDisplay": "+229 01 92 46 32 85"
+    },
+    "socials": [
+      { "label": "WhatsApp", "icon": "whatsapp", "url": "https://wa.me/2290192463285" },
+      { "label": "Email", "icon": "email", "url": "mailto:richmondbio88@gmail.com" }
+    ]
+  },
+  "hero": {
+    "eyebrow": "Disponible pour de nouveaux projets",
+    "greeting": "Bonjour, je suis",
+    "name": "Richmond BIO",
+    "alias": "Célime KANON",
+    "roles": ["Créateur de contenu IA", "Web Entrepreneur", "Designer Front-End", "Formateur Digital"],
+    "description": "Créateur de contenu IA et web entrepreneur passionné. Je transforme des idées en expériences digitales spectaculaires : sites web animés, vidéos générées par intelligence artificielle et contenus qui captivent.",
+    "image": "assets/avatar.svg",
+    "chips": ["IA Générative", "Web Design", "Stratégie Digitale", "Contenu Viral"]
+  },
+  "stats": [
+    { "value": 50, "suffix": "+", "label": "Projets réalisés" },
+    { "value": 30, "suffix": "+", "label": "Clients satisfaits" },
+    { "value": 3, "suffix": "+", "label": "Années d'expérience" },
+    { "value": 100, "suffix": "%", "label": "Passion & dévouement" }
+  ],
+  "offers": [
+    {
+      "title": "Création de contenu IA",
+      "icon": "robot",
+      "description": "Vidéos, images et textes générés par intelligence artificielle pour booster votre visibilité en ligne.",
+      "price": "50 000",
+      "unit": "FCFA / projet",
+      "featured": true,
+      "features": ["Vidéos courtes viral", "Visuels & affiches IA", "Scénarios & prompts", "Livraison rapide"],
+      "cta": "Commander"
+    },
+    {
+      "title": "Sites web & Landing pages",
+      "icon": "code",
+      "description": "Des sites modernes, animés et optimisés pour convertir vos visiteurs en clients.",
+      "price": "150 000",
+      "unit": "FCFA / site",
+      "featured": false,
+      "features": ["Design responsive", "Animations fluides", "Hébergement GitHub", "Support après vente"],
+      "cta": "Commander"
+    },
+    {
+      "title": "Identité visuelle",
+      "icon": "palette",
+      "description": "Logo, charte graphique et univers visuel cohérent pour votre marque personnelle ou entreprise.",
+      "price": "75 000",
+      "unit": "FCFA / pack",
+      "featured": false,
+      "features": ["Logo & déclinaisons", "Palette de couleurs", "Typographies", "Kit réseaux sociaux"],
+      "cta": "Commander"
+    },
+    {
+      "title": "Formation & Accompagnement",
+      "icon": "rocket",
+      "description": "Apprenez à utiliser l'IA pour créer du contenu et développer votre business en ligne.",
+      "price": "30 000",
+      "unit": "FCFA / session",
+      "featured": false,
+      "features": ["Coaching 1-to-1", "Méthodes pratiques", "Outils IA 2026", "Support WhatsApp"],
+      "cta": "Commander"
+    }
+  ],
+  "skills": [
+    { "name": "Création de contenu IA", "level": 92 },
+    { "name": "Design & UI / UX", "level": 88 },
+    { "name": "HTML / CSS / JavaScript", "level": 85 },
+    { "name": "Prompt Engineering", "level": 90 },
+    { "name": "Montage vidéo", "level": 82 },
+    { "name": "Stratégie & Marketing digital", "level": 80 }
+  ],
+  "portfolio": [
+    {
+      "title": "Vidéo promotionnelle IA",
+      "category": "Vidéo IA",
+      "description": "Clip promotionnel généré entièrement par intelligence artificielle pour une marque locale.",
+      "media": "",
+      "link": ""
+    },
+    {
+      "title": "Site vitrine animé",
+      "category": "Web Design",
+      "description": "Site vitrine avec animations premium, effet verre dépoli et design responsive.",
+      "media": "",
+      "link": ""
+    },
+    {
+      "title": "Landing page de vente",
+      "category": "Web Design",
+      "description": "Landing page haute conversion avec compteur, avis clients et tunnel de commande WhatsApp.",
+      "media": "",
+      "link": ""
+    },
+    {
+      "title": "Campagne visuelle IA",
+      "category": "Design IA",
+      "description": "Série d'affiches marketing générées avec les meilleurs outils d'image par IA.",
+      "media": "",
+      "link": ""
+    },
+    {
+      "title": "Branding startup",
+      "category": "Branding",
+      "description": "Identité complète : logo, couleurs, typographies et supports de communication.",
+      "media": "",
+      "link": ""
+    },
+    {
+      "title": "Chaîne contenu court",
+      "category": "Contenu",
+      "description": "Stratégie et production de vidéos courtes pour développer une communauté sur les réseaux.",
+      "media": "",
+      "link": ""
+    }
+  ],
+  "about": {
+    "title": "Mon histoire",
+    "photo": "assets/avatar.svg",
+    "badgeValue": "3+",
+    "badgeLabel": "Années de création digitale",
+    "paragraphs": [
+      "Je m'appelle Richmond BIO, alias Célime KANON. Je suis créateur de contenu AI et web entrepreneur. Mon aventure dans le digital a commencé avec une simple curiosité pour la technologie, qui s'est transformée en une véritable passion pour la création.",
+      "Aujourd'hui, j'aide les marques, les entrepreneurs et les créateurs à briller en ligne. Je combine intelligence artificielle, design soigné et stratégie pour produire des contenus et des sites qui captivent et qui convertissent.",
+      "Ma mission est simple : rendre le digital accessible et spectaculaire. Chaque projet est une opportunité de repousser les limites de la créativité."
+    ],
+    "chips": [
+      { "label": "Projets", "value": "50+" },
+      { "label": "Clients", "value": "30+" },
+      { "label": "Villes touchées", "value": "10+" }
+    ],
+    "timeline": [
+      { "date": "2023", "title": "Début de l'aventure digitale", "text": "Découverte de l'univers de l'IA et création des premiers contenus génératifs." },
+      { "date": "2024", "title": "Lancement de mon activité", "text": "Premiers clients, premières collaborations et premiers projets web réussis." },
+      { "date": "2025", "title": "Expertise reconnue", "text": "Spécialisation en contenu IA et web design premium pour entrepreneurs." },
+      { "date": "2026", "title": "Aujourd'hui", "text": "Accompagnement des marques vers l'excellence digitale, de la stratégie à la livraison." }
+    ]
+  },
+  "articles": [
+    {
+      "title": "Comment l'IA transforme la création de contenu en 2026",
+      "date": "2026-07-12",
+      "category": "IA",
+      "excerpt": "Découvrez les outils et méthodes qui permettent de produire des contenus spectaculaires en un temps record.",
+      "cover": "",
+      "link": ""
+    },
+    {
+      "title": "5 étapes pour un site web qui convertit",
+      "date": "2026-06-28",
+      "category": "Web",
+      "excerpt": "De l'idée au lancement : les bonnes pratiques pour créer un site professionnel qui attire des clients.",
+      "cover": "",
+      "link": ""
+    },
+    {
+      "title": "Créer une marque forte avec l'IA",
+      "date": "2026-05-15",
+      "category": "Branding",
+      "excerpt": "Logo, couleurs, univers visuel : comment l'intelligence artificielle accélère votre branding.",
+      "cover": "",
+      "link": ""
+    }
+  ]
+}

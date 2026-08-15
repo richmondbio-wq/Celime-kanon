@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="fr" data-page="home">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Célime KANON — Créateur de contenu IA & Web Entrepreneur. Portfolio officiel : services, réalisations et commandes.">
+  <title>Célime KANON — Créateur de contenu IA & Web Entrepreneur</title>
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="bg-mesh"></div>
+  <div class="bg-grid"></div>
+  <canvas id="particles"></canvas>
+
+  <!-- ============ NAVIGATION ============ -->
+  <nav class="nav" id="navbar">
+    <div class="container nav-inner">
+      <a href="index.html" class="logo">
+        <span class="logo-badge">CK</span>
+        <span><span data-ck="site.name">Célime KANON</span><small data-ck="site.tagline">Portfolio officiel</small></span>
+      </a>
+      <div class="nav-links" id="navLinks">
+        <a href="index.html">Accueil</a>
+        <a href="portfolio.html">Compétences</a>
+        <a href="about.html">À propos</a>
+        <a href="contact.html" class="nav-cta">Passer commande</a>
+      </div>
+      <button class="nav-burger" id="navBurger" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+
+  <!-- ============ HERO ============ -->
+  <header class="hero">
+    <div class="container hero-inner">
+      <div class="hero-content">
+        <span class="eyebrow animate-in"><span class="dot"></span><span data-ck="hero.eyebrow">Disponible pour de nouveaux projets</span></span>
+        <h1 class="animate-in d1"><span data-ck="hero.greeting">Bonjour, je suis</span> <span class="gradient-text" data-ck="hero.name">Richmond BIO</span><br><span class="gradient-text" data-ck="hero.alias">Célime KANON</span></h1>
+        <div class="type-wrap animate-in d2"><span class="typed"></span><span class="cursor"></span></div>
+        <p class="hero-desc animate-in d3" data-ck="hero.description"></p>
+        <div class="hero-actions animate-in d4">
+          <a href="contact.html" class="btn btn-primary">Passer commande</a>
+          <a href="portfolio.html" class="btn btn-ghost">Voir mes réalisations</a>
+        </div>
+        <div class="hero-socials animate-in d5 js-socials"></div>
+      </div>
+
+      <div class="hero-visual animate-in d2">
+        <div class="hero-orbit">
+          <div class="orbit-ring"></div>
+          <div class="orbit-ring two"></div>
+          <div class="hero-portrait js-hero-photo"></div>
+          <span class="orbit-chip chip-1 js-chip-0">IA Générative</span>
+          <span class="orbit-chip chip-2 js-chip-1">Web Design</span>
+          <span class="orbit-chip chip-3 js-chip-2">Stratégie</span>
+          <span class="orbit-chip chip-4 js-chip-3">Contenu Viral</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Stats -->
+    <div class="container">
+      <div class="stats js-stats"></div>
+    </div>
+  </header>
+
+  <!-- ============ OFFRES / SERVICES ============ -->
+  <section id="offres">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="section-tag">Services & Offres</span>
+        <h2>Ce que je vous propose</h2>
+        <p>Des solutions digitales clé en main, pensées pour votre réussite. Prix adaptés, qualité premium.</p>
+      </div>
+      <div class="offers-grid js-offers"></div>
+    </div>
+  </section>
+
+  <!-- ============ À PROPOS (aperçu) ============ -->
+  <section id="apropos">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-photo reveal">
+          <div class="frame js-about-photo"></div>
+          <div class="about-badge">
+            <b data-ck="about.badgeValue">3+</b>
+            <span data-ck="about.badgeLabel">Années de création digitale</span>
+          </div>
+        </div>
+        <div class="about-text reveal d2">
+          <span class="section-tag">À propos</span>
+          <h2 data-ck="about.title">Mon histoire</h2>
+          <div class="js-about-para"></div>
+          <div class="about-chips js-about-chips"></div>
+          <a href="about.html" class="btn btn-primary">Découvrir mon parcours</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PORTEFEUILLE (aperçu) ============ -->
+  <section id="portfolio">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="section-tag">Réalisations</span>
+        <h2>Mes derniers projets</h2>
+        <p>Un aperçu de mon travail : créations IA, sites web et designs qui font la différence.</p>
+      </div>
+      <div class="portfolio-grid js-portfolio-preview"></div>
+      <div style="text-align:center; margin-top: 44px;" class="reveal">
+        <a href="portfolio.html" class="btn btn-outline">Voir tout le portefeuille</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ARTICLES ============ -->
+  <section id="articles">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="section-tag">Blog & Conseils</span>
+        <h2>Mes derniers articles</h2>
+        <p>Mes réflexions, astuces et conseils sur l'IA, le web et l'entrepreneuriat digital.</p>
+      </div>
+      <div class="articles-grid js-articles"></div>
+    </div>
+  </section>
+
+  <!-- ============ CTA ============ -->
+  <section>
+    <div class="container">
+      <div class="cta-banner reveal">
+        <h2>Un projet en tête ?</h2>
+        <p>Discutons de votre idée et donnons-lui vie. Réponse rapide sur WhatsApp.</p>
+        <a href="contact.html" class="btn btn-lg js-wa-cta">Commencer maintenant</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a href="index.html" class="logo">
+            <span class="logo-badge">CK</span>
+            <span><span data-ck="site.name">Célime KANON</span><small data-ck="site.tagline">Portfolio officiel</small></span>
+          </a>
+          <p style="color: var(--text-muted); font-size: 0.9rem; margin-top: 16px; max-width: 320px;">Créateur de contenu IA & web entrepreneur. Je transforme vos idées en expériences digitales spectaculaires.</p>
+        </div>
+        <div>
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="portfolio.html">Compétences</a></li>
+            <li><a href="about.html">À propos</a></li>
+            <li><a href="contact.html">Passer commande</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <ul class="js-footer-contact">
+            <li><a data-ck="site.contact.email">richmondbio88@gmail.com</a></li>
+            <li><a class="js-wa-link" target="_blank" rel="noopener">WhatsApp</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span id="year"></span> <span data-ck="site.name">Célime KANON</span> — Tous droits réservés.</span>
+        <span>Créé avec passion ✦ Contenu IA & Web Design</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

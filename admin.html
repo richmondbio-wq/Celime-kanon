@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="fr" data-page="admin">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex">
+  <title>Administration — Célime KANON</title>
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/admin.css">
+</head>
+<body>
+  <div class="bg-mesh"></div>
+  <div class="bg-grid"></div>
+
+  <div class="admin-wrap">
+    <!-- ============ LOGIN ============ -->
+    <div id="loginView">
+      <div class="admin-card">
+        <div class="login-title">
+          <span class="logo-badge">CK</span>
+          <h1>Espace administrateur</h1>
+          <p>Connectez-vous pour modifier votre site.</p>
+        </div>
+        <div class="field">
+          <label for="adminPass">Mot de passe</label>
+          <input type="password" id="adminPass" placeholder="Votre mot de passe" style="width:100%;padding:14px 16px;border-radius:var(--radius-sm);border:1px solid var(--border);background:var(--surface-2);color:var(--text);font-size:0.95rem;">
+        </div>
+        <button class="btn btn-primary btn-block" id="loginBtn" style="margin-top:6px;">Se connecter</button>
+        <p class="admin-hint" id="loginErr" style="color:#ef4444;"></p>
+        <p class="admin-hint">Mot de passe par défaut : <b>ck2024</b> — à changer dans l'onglet « Données ».</p>
+      </div>
+    </div>
+
+    <!-- ============ PANNEAU ============ -->
+    <div id="panelView" class="hidden">
+      <div class="container">
+        <div class="admin-layout">
+          <!-- Sidebar -->
+          <aside class="admin-sidebar">
+            <div class="brand">
+              <span class="logo-badge" style="width:38px;height:38px;border-radius:12px;font-size:0.95rem;">CK</span>
+              <div><b>Administration</b><small>Gestion du site</small></div>
+            </div>
+            <nav class="tab-nav" id="tabNav">
+              <button class="tab-btn active" data-tab="overview">Tableau de bord</button>
+              <button class="tab-btn" data-tab="identity">Identité & Contact</button>
+              <button class="tab-btn" data-tab="hero">Page d'accueil</button>
+              <button class="tab-btn" data-tab="stats">Statistiques</button>
+              <button class="tab-btn" data-tab="offers">Mes Offres</button>
+              <button class="tab-btn" data-tab="portfolio">Portefeuille</button>
+              <button class="tab-btn" data-tab="skills">Compétences</button>
+              <button class="tab-btn" data-tab="about">Bio / À propos</button>
+              <button class="tab-btn" data-tab="articles">Articles</button>
+              <button class="tab-btn" data-tab="theme">Thème du site</button>
+              <button class="tab-btn" data-tab="data">Données & GitHub</button>
+            </nav>
+          </aside>
+
+          <!-- Main -->
+          <main class="admin-main">
+            <div class="admin-topbar">
+              <div>
+                <h2 id="tabTitle">Tableau de bord</h2>
+                <div class="sub" id="tabSub">Vue d'ensemble de votre site.</div>
+              </div>
+              <div style="display:flex;gap:10px;flex-wrap:wrap;">
+                <a href="index.html" class="btn btn-ghost btn-sm" target="_blank">Voir le site</a>
+                <button class="btn btn-primary btn-sm" id="saveBtn">Enregistrer tout</button>
+                <button class="btn btn-ghost btn-sm" id="logoutBtn">Déconnexion</button>
+              </div>
+            </div>
+            <div id="tabContent"></div>
+          </main>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="toast" id="toast"></div>
+
+  <script src="js/data.js"></script>
+  <script src="js/admin.js"></script>
+</body>
+</html>
