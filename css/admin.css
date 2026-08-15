@@ -1,1 +1,227 @@
+/* ============================================================
+   CÉLIME KANON — Styles de l'interface d'administration
+   ============================================================ */
+.admin-wrap { min-height: 100vh; padding: 40px 0 80px; }
+
+.admin-card {
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  background: var(--surface);
+  backdrop-filter: blur(12px);
+  padding: 30px;
+  max-width: 640px;
+  margin-inline: auto;
+}
+
+.hidden { display: none !important; }
+
+/* ---------- Login ---------- */
+.login-title { text-align: center; margin-bottom: 28px; }
+.login-title .logo-badge { margin-inline: auto; margin-bottom: 14px; }
+.login-title h1 { font-size: 1.5rem; margin-bottom: 6px; }
+.login-title p { color: var(--text-muted); font-size: 0.9rem; }
+.admin-hint {
+  font-size: 0.8rem; color: var(--text-muted); text-align: center;
+  margin-top: 14px; border-top: 1px dashed var(--border); padding-top: 14px;
+}
+
+/* ---------- Layout ---------- */
+.admin-layout { display: grid; grid-template-columns: 250px 1fr; gap: 28px; align-items: start; }
+
+.admin-sidebar {
+  position: sticky; top: 20px;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  background: var(--surface);
+  backdrop-filter: blur(12px);
+  padding: 22px 16px;
+}
+.admin-sidebar .brand { display: flex; align-items: center; gap: 12px; padding: 0 8px 18px; border-bottom: 1px solid var(--border); margin-bottom: 16px; }
+.admin-sidebar .brand b { font-size: 0.95rem; }
+.admin-sidebar .brand small { color: var(--text-muted); font-size: 0.72rem; }
+
+.tab-nav { display: grid; gap: 4px; }
+.tab-btn {
+  display: flex; align-items: center; gap: 10px;
+  width: 100%;
+  padding: 11px 14px;
+  border-radius: var(--radius-sm);
+  border: 0;
+  background: transparent;
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  font-weight: 500;
+  text-align: left;
+  transition: 0.25s;
+}
+.tab-btn:hover { background: var(--surface-2); color: var(--text); }
+.tab-btn.active { background: var(--gradient); color: #fff; box-shadow: 0 8px 22px var(--primary-glow); }
+
+/* ---------- Topbar ---------- */
+.admin-main { min-width: 0; }
+.admin-topbar {
+  display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 14px;
+  margin-bottom: 26px;
+}
+.admin-topbar h2 { font-size: 1.5rem; }
+.admin-topbar .sub { color: var(--text-muted); font-size: 0.85rem; }
+
+/* ---------- Sections & formulaires ---------- */
+.a-section {
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  background: var(--surface);
+  backdrop-filter: blur(12px);
+  padding: 26px;
+  margin-bottom: 22px;
+}
+.a-section h3 { font-size: 1.1rem; margin-bottom: 4px; }
+.a-section > .sub { color: var(--text-muted); font-size: 0.85rem; margin-bottom: 20px; }
+
+.field-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+.field-row .field, .field.full { margin-bottom: 16px; }
+.field.full { grid-column: 1 / -1; }
+
+/* ---------- Listes éditoriales ---------- */
+.item-card {
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  background: var(--surface-2);
+  padding: 18px;
+  margin-bottom: 16px;
+  position: relative;
+}
+.item-card .item-head {
+  display: flex; align-items: center; justify-content: space-between; gap: 10px;
+  margin-bottom: 14px;
+}
+.item-card .item-head b { font-size: 0.95rem; }
+.item-badge { padding: 4px 12px; border-radius: 999px; background: var(--gradient); color: #fff; font-size: 0.7rem; font-weight: 700; }
+
+.icon-btn, .del-btn {
+  border: 1px solid var(--border);
+  background: var(--surface);
+  color: var(--text-muted);
+  border-radius: 10px;
+  padding: 8px 12px;
+  font-size: 0.82rem;
+  transition: 0.25s;
+}
+.icon-btn:hover { border-color: var(--primary); color: var(--primary); }
+.del-btn:hover { border-color: #ef4444; color: #ef4444; }
+
+.add-btn {
+  width: 100%;
+  padding: 13px;
+  border-radius: var(--radius-sm);
+  border: 2px dashed var(--border);
+  background: transparent;
+  color: var(--text-muted);
+  font-weight: 600;
+  transition: 0.25s;
+}
+.add-btn:hover { border-color: var(--primary); color: var(--primary); }
+
+/* ---------- Checkbox & switch ---------- */
+.switch { display: flex; align-items: center; gap: 10px; cursor: pointer; font-size: 0.88rem; }
+.switch input { width: 18px; height: 18px; accent-color: var(--primary); }
+
+/* ---------- Média ---------- */
+.media-upload { display: flex; gap: 10px; }
+.media-upload input[type="text"] { flex: 1; }
+.media-upload label {
+  display: inline-flex; align-items: center; gap: 8px;
+  padding: 12px 16px;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border);
+  background: var(--surface-2);
+  color: var(--text-muted);
+  font-size: 0.85rem;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: 0.25s;
+}
+.media-upload label:hover { border-color: var(--primary); color: var(--primary); }
+.media-upload input[type="file"] { display: none; }
+.media-preview { margin-top: 10px; max-height: 160px; border-radius: var(--radius-sm); overflow: hidden; }
+.media-preview img, .media-preview video { max-height: 160px; width: auto; border-radius: var(--radius-sm); border: 1px solid var(--border); }
+
+/* ---------- Thème ---------- */
+.theme-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px; }
+.color-pick { display: flex; align-items: center; gap: 12px; }
+.color-pick label { font-size: 0.85rem; color: var(--text-muted); flex: 1; }
+.color-pick input[type="color"] {
+  width: 46px; height: 38px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: transparent;
+  cursor: pointer;
+  padding: 2px;
+}
+.preset-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; }
+.preset {
+  padding: 12px;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border);
+  background: var(--surface-2);
+  color: var(--text);
+  font-size: 0.82rem;
+  font-weight: 600;
+  transition: 0.25s;
+}
+.preset:hover { transform: translateY(-2px); border-color: var(--primary); }
+
+/* ---------- Toasts ---------- */
+.toast {
+  position: fixed; bottom: 24px; left: 50%; transform: translate(-50%, 80px);
+  background: var(--gradient);
+  color: #fff;
+  padding: 14px 26px;
+  border-radius: 999px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  box-shadow: 0 14px 40px var(--primary-glow);
+  opacity: 0;
+  transition: 0.4s cubic-bezier(0.2, 0.8, 0.2, 1);
+  z-index: 2000;
+  max-width: 92%;
+  text-align: center;
+}
+.toast.show { opacity: 1; transform: translate(-50%, 0); }
+.toast.error { background: linear-gradient(120deg, #ef4444, #f97316); }
+
+/* ---------- Data ---------- */
+.data-actions { display: grid; gap: 12px; }
+.data-action {
+  display: flex; align-items: center; justify-content: space-between; gap: 14px;
+  padding: 16px;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border);
+  background: var(--surface-2);
+}
+.data-action div b { display: block; font-size: 0.92rem; }
+.data-action div span { color: var(--text-muted); font-size: 0.8rem; }
+.data-action .btn { white-space: nowrap; }
+.gh-steps { margin-top: 12px; padding-left: 18px; color: var(--text-muted); font-size: 0.86rem; }
+.gh-steps li { margin-bottom: 8px; }
+.gh-steps code { background: var(--surface-2); border: 1px solid var(--border); padding: 2px 8px; border-radius: 6px; font-size: 0.8rem; }
+
+/* ---------- Dashboard ---------- */
+.dash-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 14px; margin-bottom: 24px; }
+.dash-card { text-align: center; padding: 22px 12px; border-radius: var(--radius); border: 1px solid var(--border); background: var(--surface-2); }
+.dash-card b { display: block; font-size: 2rem; background: var(--gradient); -webkit-background-clip: text; background-clip: text; color: transparent; }
+.dash-card span { color: var(--text-muted); font-size: 0.82rem; }
+
+/* ---------- Responsive ---------- */
+@media (max-width: 900px) {
+  .admin-layout { grid-template-columns: 1fr; }
+  .admin-sidebar { position: static; }
+  .tab-nav { grid-template-columns: repeat(3, 1fr); }
+  .tab-btn { justify-content: center; text-align: center; }
+}
+@media (max-width: 560px) {
+  .field-row { grid-template-columns: 1fr; }
+  .tab-nav { grid-template-columns: repeat(2, 1fr); }
+  .theme-grid { grid-template-columns: 1fr; }
+}
 
